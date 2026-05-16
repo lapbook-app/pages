@@ -92,14 +92,14 @@ You are responsible for Your Content. You represent that:
 
 ## 6. Privacy
 
-Your use of lapbook is also governed by our [Privacy Policy](LINK_TO_PRIVACY_POLICY), which explains how we collect, use, and protect your data.
+Your use of lapbook is also governed by our [Privacy Policy](https://lapbook-app.github.io/pages/privacy_policy), which explains how we collect, use, and protect your data.
 
 In summary, lapbook collects:
 
 - Account information (Apple ID, email, runner name).
 - Training data you create (chapters, laps, splits).
-- Location data when you record a run (with your permission).
-- Crash and analytics data to improve the Service.
+- Apple Health workout data (distance, pace, duration) when you enable the integration.
+- Approximate location to fetch local weather forecasts (with your permission).
 
 We do not sell your personal data.
 
@@ -277,7 +277,7 @@ These Terms are written in English. If translated into other languages, the Engl
 
 If you have any questions about these Terms, contact us at:
 
-**Email**: support@lapbook.app
+**Email**: lapbook.run@gmail.com
 **Operator**: Jaehoon Cha
 **Location**: Republic of Korea
 

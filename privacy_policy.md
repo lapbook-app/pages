@@ -110,7 +110,7 @@ We may update this Privacy Policy from time to time. Changes will be reflected b
 
 If you have questions about this Privacy Policy, please contact:
 
-**Email:** happython@gmail.com
+**Email:** lapbook.run@gmail.com
 
 ---
 
