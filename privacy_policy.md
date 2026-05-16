@@ -27,7 +27,13 @@ LapBook ("the App") is a running training journal that helps runners plan, track
 - Location data is **not stored** on our servers
 - Location access requires your explicit permission and can be revoked at any time in Settings
 
-### 2.4 Device Information
+### 2.4 Apple Health Data (Optional)
+- **Workout data** (distance, pace, duration) — read from Apple Health to auto-fill your running results
+- Data is read **only when you enable** Apple Health in the App settings
+- LapBook **does not write** any data to Apple Health
+- HealthKit data is used locally and synced as part of your training data
+
+### 2.5 Device Information
 - Timezone identifier — used to display correct dates and weekly boundaries
 
 ---
@@ -40,6 +46,7 @@ LapBook ("the App") is a running training journal that helps runners plan, track
 | Display name | Personalization | Yes |
 | Training data | Sync across devices, backup | Yes |
 | Location | Weather forecasts | No |
+| Apple Health (workouts) | Auto-fill running results | No (stored as training data) |
 | Timezone | Correct date display | Yes |
 
 We do **not**:
