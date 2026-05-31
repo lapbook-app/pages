@@ -1,6 +1,6 @@
 # LapBook Privacy Policy
 
-**Last Updated:** 2026-05-16
+**Last Updated:** 2026-05-31
 **Version:** 1.1
 
 ---

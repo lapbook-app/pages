@@ -1,7 +1,8 @@
 # Terms of Service
 
-**Last updated: May 1, 2026**
-**Effective date: May 15, 2026**
+**Last updated: May 31, 2026**
+**Effective date: May 31, 2026**
+**Version: 1.1**
 
 Welcome to **lapbook** ("the App", "we", "our", "us"). These Terms of Service ("Terms") govern your use of the lapbook mobile application and related services (collectively, the "Service") operated by **Jaehoon Cha** ("Operator"), based in **Republic of Korea**.
 
@@ -39,6 +40,8 @@ You may create an account using **Sign in with Apple**. You agree to:
 - Notify us immediately of any unauthorized access.
 - Be responsible for all activity under your account.
 
+An **active iCloud account is required** to use lapbook. Your training data is stored in your private iCloud (CloudKit) rather than on our servers. If iCloud is unavailable or disabled, certain features of the App may not function.
+
 ### 3.2 Runner Name
 
 You will choose a "runner name" within the App. You agree not to use names that:
@@ -51,7 +54,11 @@ We reserve the right to refuse or remove inappropriate runner names.
 
 ### 3.3 Account Deletion
 
-You can delete your account at any time within the App (Settings → Account → Delete Account). Account deletion permanently removes all your data, including chapters, laps, splits, and notes. **This action cannot be undone.**
+You can delete your account at any time within the App (Settings → Account → Delete Account). Account deletion permanently removes the account information stored on our servers (email, display name, preferences).
+
+Your training data (chapters, laps, splits, notes) is stored in **your own iCloud**, not on our servers. To remove training data, delete items within the App or disable iCloud sync for lapbook in iOS Settings. Because the data resides under your Apple ID, we cannot delete it on your behalf.
+
+**Account deletion cannot be undone.**
 
 ---
 
@@ -79,7 +86,9 @@ You retain full ownership of all content you create in lapbook, including traini
 
 ### 5.2 License to Operate the Service
 
-You grant us a limited, non-exclusive, worldwide license to store, process, and display Your Content **solely to provide the Service to you**. We do not use Your Content for advertising, sell it to third parties, or train AI models with it.
+You grant us a limited, non-exclusive, worldwide license to process and display Your Content **solely to provide the Service to you**. We do not use Your Content for advertising, sell it to third parties, or train AI models with it.
+
+Your training content is stored in **your private iCloud** under your Apple ID, not on our servers. We do not have access to it.
 
 ### 5.3 Responsibility
 
@@ -94,12 +103,12 @@ You are responsible for Your Content. You represent that:
 
 Your use of lapbook is also governed by our [Privacy Policy](https://lapbook-app.github.io/pages/privacy_policy), which explains how we collect, use, and protect your data.
 
-In summary, lapbook collects:
+In summary, lapbook:
 
-- Account information (Apple ID, email, runner name).
-- Training data you create (chapters, laps, splits).
-- Apple Health workout data (distance, pace, duration) when you enable the integration.
-- Approximate location to fetch local weather forecasts (with your permission).
+- Stores account information (Apple ID, email, runner name, preferences) on our servers.
+- Stores your training data (chapters, laps, splits, notes) in **your private iCloud** under your Apple ID — we do not have access to it.
+- Reads Apple Health workout data (distance, pace, duration) only when you enable the integration.
+- Reads approximate location (with your permission) only to fetch local weather forecasts. Location is not stored.
 
 We do not sell your personal data.
 
