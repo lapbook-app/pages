@@ -1,6 +1,7 @@
 # LapBook Privacy Policy
 
-**Last Updated:** 2026-04-23
+**Last Updated:** 2026-05-16
+**Version:** 1.1
 
 ---
 
@@ -17,7 +18,7 @@ LapBook ("the App") is a running training journal that helps runners plan, track
 - **Display name (optional)** — a nickname you choose to personalize your profile
 
 ### 2.2 Training Data
-- Training plans (seasons, chapters, blocks, laps, splits)
+- Training plans (chapters, laps, splits)
 - Workout values (distance, pace, duration, elevation)
 - Personal notes and reflections
 - Mood and feel ratings
@@ -31,7 +32,7 @@ LapBook ("the App") is a running training journal that helps runners plan, track
 - **Workout data** (distance, pace, duration) — read from Apple Health to auto-fill your running results
 - Data is read **only when you enable** Apple Health in the App settings
 - LapBook **does not write** any data to Apple Health
-- HealthKit data is used locally and synced as part of your training data
+- HealthKit data is used locally and saved as part of your training data in your private iCloud
 
 ### 2.5 Device Information
 - Timezone identifier — used to display correct dates and weekly boundaries
@@ -40,14 +41,15 @@ LapBook ("the App") is a running training journal that helps runners plan, track
 
 ## 3. How We Use Your Information
 
-| Data | Purpose | Stored On Server |
+| Data | Purpose | Storage Location |
 |------|---------|-----------------|
-| Email | Authentication, account recovery | Yes |
-| Display name | Personalization | Yes |
-| Training data | Sync across devices, backup | Yes |
-| Location | Weather forecasts | No |
-| Apple Health (workouts) | Auto-fill running results | No (stored as training data) |
-| Timezone | Correct date display | Yes |
+| Email | Authentication, account recovery | LapBook server (Supabase) |
+| Display name | Personalization | LapBook server (Supabase) |
+| Training data | Sync across your devices, backup | Your private iCloud (Apple) |
+| Location | Weather forecasts | Not stored |
+| Apple Health (workouts) | Auto-fill running results | Your private iCloud (Apple) |
+| Timezone | Correct date display | LapBook server (Supabase) |
+| Preferences (units, week start) | Personalization | LapBook server (Supabase) |
 
 We do **not**:
 - Sell your personal information to third parties
@@ -59,19 +61,40 @@ We do **not**:
 
 ## 4. Data Storage & Security
 
-- Your data is stored on **Supabase** (PostgreSQL), hosted on AWS infrastructure
-- All data transmission uses HTTPS/TLS encryption
-- Row Level Security (RLS) ensures you can only access your own data
-- Authentication tokens are stored securely in the iOS Keychain
+### 4.1 Training Data — Stored in Your Private iCloud
+Your training data (chapters, laps, splits, workout values, notes) is stored in **your personal iCloud account** using Apple's CloudKit private database. This means:
+
+- **We do not have access to your training data.** It is stored privately under your Apple ID.
+- Data is end-to-end protected by Apple's iCloud security.
+- Data syncs automatically across all of your devices signed in with the same Apple ID.
+- An active iCloud account is required for the App to function.
+
+### 4.2 Account Data — Stored on LapBook Servers
+Account-related information (email, display name, preferences such as distance unit and week start day) is stored on **Supabase** (PostgreSQL), hosted on AWS infrastructure.
+
+- All data transmission uses HTTPS/TLS encryption.
+- Row Level Security (RLS) ensures you can only access your own account data.
+- Authentication tokens are stored securely in the iOS Keychain.
 
 ---
 
 ## 5. Data Retention & Deletion
 
-- Your data is retained as long as your account is active
-- You can **delete your account** at any time from the Runner profile in the App
-- Account deletion permanently removes **all** associated data from our servers
-- Deletion is irreversible
+### 5.1 Account Deletion
+You can **delete your account** at any time from the Runner profile in the App. Account deletion permanently removes:
+
+- All account data (email, display name, preferences) from LapBook servers
+
+### 5.2 Training Data (iCloud)
+Your training data is stored in **your own iCloud**, not on LapBook servers. To remove training data:
+
+- Delete chapters/laps/splits individually within the App, or
+- Sign out of iCloud, or
+- Disable iCloud sync for LapBook in iOS Settings → [Your Name] → iCloud
+
+Because the data resides under your Apple ID, **LapBook cannot delete it for you**. iCloud data is governed by [Apple's Privacy Policy](https://www.apple.com/legal/privacy/).
+
+Deletion is irreversible.
 
 ---
 
@@ -79,7 +102,8 @@ We do **not**:
 
 | Service | Purpose | Privacy Policy |
 |---------|---------|----------------|
-| Supabase | Authentication & data storage | https://supabase.com/privacy |
+| Apple iCloud (CloudKit) | Storage of your training data | https://www.apple.com/legal/privacy/ |
+| Supabase | Account authentication & profile storage | https://supabase.com/privacy |
 | Apple WeatherKit | Weather forecasts | https://www.apple.com/legal/privacy/ |
 
 ---
@@ -95,7 +119,7 @@ LapBook is not directed at children under 13. We do not knowingly collect person
 You have the right to:
 - **Access** your data (available in the App)
 - **Correct** your data (editable in the App)
-- **Delete** your data (account deletion in Runner profile)
+- **Delete** your data (account deletion in Runner profile; training data via iCloud)
 - **Export** your data (planned for a future update)
 
 ---
